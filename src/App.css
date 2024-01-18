@@ -2,6 +2,7 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
+    background: #EFF3F7;
 }
 
 .faq_btn {
@@ -28,6 +29,22 @@ body {
     height: 2px;
     background-color: #1765FC;
     border-radius: 2px 2px 0px 0px;
-    bottom: -10px;
+    bottom: -12px;
+    left: 0;
+}
+
+.point {
+    color: #202027 !important;
+    position: relative;
+}
+
+.point::after {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 32px;
+    border-radius: 0px 10px 10px 0px;
+    background: #1765FC;
+    top: 30px;
     left: 0;
 }

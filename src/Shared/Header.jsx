@@ -54,7 +54,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="px-8 py-[23px]">
+    <div className="px-8 pb-[12px] pt-[23px] bg-white">
       <div className="flex justify-between gap-5 items-center">
         <div className="flex items-center gap-[33px]">
           <div>
@@ -64,7 +64,8 @@ const Header = () => {
           </div>
           <div className="flex">
             {navlinks.map((data, index) => (
-              <div
+              <Link
+                to={data.path}
                 key={index}
                 className={`${
                   location.pathname === data.path && "active"
@@ -76,7 +77,7 @@ const Header = () => {
                   alt=""
                 />
                 <p className=" text-xs text-medium">{data.title}</p>
-              </div>
+              </Link>
             ))}
           </div>
           <button className="faq_btn">FAQ</button>
