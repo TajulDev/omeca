@@ -36,27 +36,32 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
               </button>
             </div>
             {step === 1 && (
-              <button className="text-blue font-medium border border-blue rounded-[40px] shadow-md p-[17px] w-[206px]">
+              <button className="text-royalBlue font-medium border border-royalBlue rounded-[40px] shadow-md p-[17px] w-[206px]">
                 Upload CSV
               </button>
             )}
           </div>
         </div>
 
-        <div className="flex justify-between gap-4 items-center mb-[26px]">
-          <button
-            onClick={handleBack}
-            className="flex items-center gap-2 text-secondary font-normal"
-          >
-            <img src={undo} alt="" />
-            Back
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-blue text-white font-medium p-[17px] w-[170px] rounded-[60px]"
-          >
-            Next
-          </button>
+        <div>
+          <div className="flex justify-between gap-4 items-center mb-[26px]">
+            <button
+              onClick={handleBack}
+              className="flex items-center gap-2 text-secondary font-normal"
+            >
+              <img src={undo} alt="" />
+              Back
+            </button>
+            <button
+              onClick={handleNext}
+              className="bg-royalBlue text-white font-medium p-[17px] w-[170px] rounded-[60px]"
+            >
+              Next
+            </button>
+          </div>
+          <div className="border-b border-blue-400">
+            <div className="border-b border-royalBlue border-[3px] w-[33.33%]"></div>
+          </div>
         </div>
       </div>
     </div>

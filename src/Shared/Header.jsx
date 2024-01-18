@@ -84,7 +84,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-[18px]">
-          <button className="bg-blue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
+          <button className="bg-royalBlue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
             Ask Questions?
           </button>
           <div className="relative">
