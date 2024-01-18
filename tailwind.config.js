@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#0D0D0E",
         secondary: "#999EAB",
-        blue: "#1765FC",
+        royalBlue: "#1765FC",
       },
     },
   },
