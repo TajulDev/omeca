@@ -72,7 +72,8 @@ const Header = () => {
 
           <div className="flex flex-wrap md:flex-nowrap gap-5 md:gap-0">
             {navlinks.map((data, index) => (
-              <div
+              <Link
+                to={data.path}
                 key={index}
                 className={`${
                   location.pathname === data.path && "active"
@@ -83,7 +84,7 @@ const Header = () => {
                   alt=""
                 />
                 <p className=" text-xs text-medium">{data.title}</p>
-              </div>
+              </Link>
             ))}
           </div>
 
