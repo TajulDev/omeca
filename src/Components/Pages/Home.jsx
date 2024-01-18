@@ -1,12 +1,5 @@
-
-import Header from "../../Shared/Header";
-
 const Home = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <div>home</div>;
 };
 
 export default Home;
