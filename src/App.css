@@ -48,3 +48,7 @@ body {
     top: 30px;
     left: 0;
 }
+
+.no_scrollbar::-webkit-scrollbar {
+    display: none;
+}

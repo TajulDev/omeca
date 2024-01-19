@@ -6,7 +6,7 @@ import { useState } from "react";
 const Chatting = () => {
   const [openIndex, setOpenIndex] = useState(null);
   return (
-    <div className="h-[572px] flex flex-col justify-between gap-4">
+    <div className="h-[572px] flex flex-col justify-between gap-4 overflow-y-auto no_scrollbar">
       <div className="flex flex-col items-center justify-center">
         <img className="mb-[6px]" src={chatting} alt="" />
         <p className="text-[34px] font-bold text-primary mb-[25px]">
