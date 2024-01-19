@@ -76,8 +76,11 @@ const Header = () => {
                 to={data.path}
                 key={index}
                 className={`${
-                  location.pathname === data.path && "active"
-                } "  text-secondary flex-shrink-0 w-[65px] flex flex-col justify-center items-center text-center "`}
+                  location.pathname.includes("/prompts") &&
+                  data.path.includes("/prompts")
+                    ? "active"
+                    : location.pathname === data.path && "active"
+                }  text-secondary flex-shrink-0 w-[65px] flex flex-col justify-center items-center text-center `}
               >
                 <img
                   className="object-contain mb-[6px]"
