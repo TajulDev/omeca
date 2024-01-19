@@ -56,6 +56,7 @@ const Header = () => {
     },
     {
       pic: notification,
+      active: notification,
       title: "Notification",
       path: "/notification",
     },
