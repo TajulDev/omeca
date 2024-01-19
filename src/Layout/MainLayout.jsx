@@ -4,7 +4,7 @@ import Footer from "../Shared/Footer";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="pt-[94px]">
       <Header />
       <Outlet />
       <Footer />

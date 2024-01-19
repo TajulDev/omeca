@@ -7,9 +7,11 @@ const DashboardLayout = () => {
   return (
     <div>
       <Header />
-      <div className="flex">
+      <div className="flex h-full pt-[94px]">
         <Sidebar />
-        <Outlet />
+        <div className="overflow-y-auto w-full">
+          <Outlet />
+        </div>
       </div>
       <Footer />
     </div>
