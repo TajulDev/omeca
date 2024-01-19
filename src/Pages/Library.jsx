@@ -149,7 +149,7 @@ const Library = () => {
                 {newVideo.map((newVideoItem, index) => (
                   <>
                     <div
-                      className="new_video_card flex flex-col items-center text-center py-3 px-4 bg-white rounded-[6px] shadow-cardShaow relative mb-5"
+                      className="new_video_card flex flex-col items-center text-center py-3 px-4 bg-white rounded-[6px] shadow-prompts relative mb-5"
                       key={index}>
                       <div className="new_video_img">
                         <img src={newVideoItem.videoImg} alt="" />

@@ -11,27 +11,27 @@ const Sidebar = () => {
     {
       pic: goal,
       title: "Goal",
-      path: "/dashboard/goal",
+      path: "/prompts/goal",
     },
     {
       pic: data,
       title: "Data Sources",
-      path: "/dashboard/data",
+      path: "/prompts/data-source",
     },
     {
       pic: plan,
       title: "Plan",
-      path: "/dashboard/plan",
+      path: "/prompts/plan",
     },
     {
       pic: sound,
       title: "Assigned project lead",
-      path: "/dashboard/project-lead",
+      path: "/prompts/project-lead",
     },
     {
       pic: deploy,
       title: "Deploy",
-      path: "/dashboard/deploy",
+      path: "/prompts/deploy",
     },
   ];
   return (

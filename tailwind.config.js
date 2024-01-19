@@ -9,8 +9,8 @@ export default {
         royalBlue: "#1765FC",
       },
       boxShadow: {
-        cardShaow: "0px 2px 6px 0px rgba(0, 0, 0, 0.12);",
-      },
+        prompts: " 0px 2px 6px 0px rgba(0, 0, 0, 0.12)"
+      }
     },
   },
   plugins: [],
