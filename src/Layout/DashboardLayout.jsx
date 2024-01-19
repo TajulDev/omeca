@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-// import Footer from "../Shared/Footer";
+import Footer from "../Shared/Footer";
 import Header from "../Shared/Header";
 import Sidebar from "../Shared/Sidebar";
 
@@ -11,7 +11,7 @@ const DashboardLayout = () => {
         <Sidebar />
         <Outlet className="w-full" />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
