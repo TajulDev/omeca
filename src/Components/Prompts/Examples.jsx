@@ -2,7 +2,7 @@
 const Examples = () => {
     return (
         <>
-            <div className="bg-white rounded-[6px] mt-[70px] pt-[25px] ps-[19px] pe-[13px] h-[810px] w-[100%] lg:max-w-[292px] ">
+            <div className="bg-white rounded-[6px] mt-[70px] pt-[25px] ps-[19px] pe-[13px] h-[100vh] w-[100%] lg:max-w-[292px] ">
                 <h3 className="text-lg font-medium text-[#202027]  mb-[20px] ">
                     Examples
                 </h3>
