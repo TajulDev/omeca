@@ -169,8 +169,7 @@ const Header = () => {
                     to={data.path}
                     className={`${
                       location.pathname === data.path && "active"
-                    }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}
-                  >
+                    }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}>
                     <img
                       className="object-contain mb-[6px]"
                       src={

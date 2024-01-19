@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import send from "../../assets/send.png";
 
 const ChattingNext = () => {
