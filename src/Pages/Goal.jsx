@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import { useState } from "react";
 import Chatting from "../Components/Goal/Chatting";
 import ChattingNext from "../Components/Goal/ChattingNext";
 
@@ -10,10 +11,7 @@ const Goal = () => {
         {chatting ? <Chatting /> : <ChattingNext />}
       </div>
       <div className="pub_btn text-end">
-        <button
-          onClick={() => setChatting(!chatting)}
-          className="py-4 w-[170px] inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300"
-        >
+        <button onClick={() => setChatting(!chatting)} className="py-4 w-[170px] inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300">
           Continue
         </button>
       </div>

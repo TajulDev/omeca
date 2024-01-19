@@ -108,7 +108,7 @@ const Library = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="other_lib_cards flex flex-wrap gap-4">
+                <div className="other_lib_cards flex flex-wrap justify-center md:justify-normal gap-4">
                   {otherLibrary.map((overLibItem, index) => (
                     <>
                       <div
@@ -164,7 +164,7 @@ const Library = () => {
                       </div>
 
                       <p className="w-[32px] h-[32px] rounded-full bg-[#EFF3F7] text-[#999EAB] text-sm font-normal flex items-center justify-center absolute top-[12px] left-[14px]">
-                        {newVideoItem.vieoId}
+                        0{newVideoItem.vieoId}
                       </p>
                     </div>
                   </>
