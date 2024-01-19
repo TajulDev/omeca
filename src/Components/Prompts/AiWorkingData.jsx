@@ -51,7 +51,7 @@ const AiWorkingData = () => {
                         <>
                             <div className=' flex justify-center flex-col items-center m-auto'>
                                 <div className='text-center bg-[#1765FC] py-[13px] text-white rounded-[50%] flex justify-center items-center w-[42px] h-[42px] px-[15px]'>
-                                    <p>{index}</p>
+                                    <p>{index+1}</p>
                                 </div>
                                 <div className='text-center mt-[13px] text-sm font-normal text-[#202027ad]  leading-[-0.42px] w-full max-w-[526px] '>
                                     <p>{data}</p>
