@@ -3,6 +3,8 @@ import Home from "../Pages/Home";
 import MainLayout from "../Layout/MainLayout";
 import Domain from "../Pages/Domain";
 import DashboardLayout from "../Layout/DashboardLayout";
+import Goal from "../Pages/Goal";
+import Prompts from "../Pages/Prompts";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +27,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <Home />,
+        element: <Goal />,
+      },
+      {
+        path: "/dashboard/prompts",
+        element: <Prompts />,
       },
     ],
   },
