@@ -4,9 +4,17 @@ import blueBar from '../../assets/blue-bar.png';
 import blueOne from '../../assets/blue-01.png';
 import blueTwo from '../../assets/blue-02.png';
 import plus from '../../assets/plus-btn.png';
+import { useState } from 'react';
+
 const AiWorkingData = () => {
+    const [textValue, setTextValue] = useState("")
+    const handleOnChange = (e) => {
+        console.log(e.target.value)
+        setTextValue(e.target.value)
+    }
+
     return (
-        <div>
+        <>
             <div className='mb-[24px]'>
                 <div className=' flex justify-center flex-col items-center m-auto'>
                     <div className='text-center'>
@@ -17,14 +25,14 @@ const AiWorkingData = () => {
                     </div>
                 </div>
             </div>
-
+            <p>{textValue}</p>
             <div className='mb-[24px]'>
                 <div className=' flex justify-center flex-col items-center m-auto'>
                     <div className='text-center'>
                         <img className='mb-[24px]' src={blueBar} alt="" />
                     </div>
                     <div>
-                        <textarea className='p-[20px] bg-[#EEE] border border-[#999EAB] w-[556px] h-[144px] rounded-[10px]' type="text" />
+                        <textarea onChange={handleOnChange} className='p-[20px] bg-[#EEE] border border-[#999EAB] w-[556px] h-[144px] rounded-[10px]' type="text" />
                     </div>
                 </div>
             </div>
@@ -40,6 +48,8 @@ const AiWorkingData = () => {
                     </div>
                 </div>
             </div>
+
+
             <div className='mb-[24px]'>
                 <div className=' flex justify-center flex-col items-center m-auto'>
                     <div className='text-center'>
@@ -79,12 +89,9 @@ const AiWorkingData = () => {
                     <div className='text-center'>
                         <img className='mb-[24px]' src={plus} alt="" />
                     </div>
-                    
                 </div>
             </div>
-
-
-        </div>
+        </>
     );
 };
 
