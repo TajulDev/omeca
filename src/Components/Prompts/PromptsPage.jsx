@@ -10,14 +10,26 @@ import Examples from "./Examples";
 
 const PromptsPage = () => {
     const [workFlow, setWorkFlow] = useState(false);
+    const [aiActive, setAiActive] = useState(false);
+    const [botActive, setBotActive] = useState(false);
 
-    const [active, setActive] = useState(false);
+    const [humanActive, setHumanActive] = useState(false);
+    const [apiActive, setApiActive] = useState(false);
 
-    const handleActive = () => {
-        setActive(!active);
+    const handleBotActive = () => {
+        setBotActive(!botActive);
+    }
+    const handleAiActive = () => {
+        setAiActive(!aiActive);
     };
     const handleWorkFlow = () => {
         setWorkFlow(!workFlow);
+    };
+    const handleApiActive = () => {
+        setApiActive(!apiActive);
+    };
+    const handleHumanActive = () => {
+        setHumanActive(!humanActive);
     };
 
     return (
@@ -31,8 +43,8 @@ const PromptsPage = () => {
                             <div className="m-auto shadow-prompts h-[91px] bg-white rounded-[5px] p-[6px]  mb-[20px]">
                                 <div className="flex items-center gap-[2px]">
                                     <div
-                                        onClick={handleActive}
-                                        className={`${active
+                                        onClick={handleAiActive}
+                                        className={`${aiActive
                                             ? "border-[#1865FC] border  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer "
                                             : "border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer"
                                             }`}
@@ -45,7 +57,11 @@ const PromptsPage = () => {
                                         <p className="text-[#202027] text-sm  font-normal">AI</p>
                                     </div>
 
-                                    <div className=" border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center cursor-pointer">
+                                    <div onClick={handleBotActive}
+                                        className={`${botActive
+                                            ? "border-[#1865FC] border  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer "
+                                            : "border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer"
+                                            }`}>
                                         <img
                                             className="w-[30px] h-[30px] mb-[8px]"
                                             src={bot}
@@ -53,7 +69,11 @@ const PromptsPage = () => {
                                         />
                                         <p className="text-[#202027] text-sm  font-normal">Bot</p>
                                     </div>
-                                    <div className=" border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts flex flex-col  cursor-pointer items-center">
+                                    <div onClick={handleHumanActive}
+                                        className={`${humanActive
+                                            ? "border-[#1865FC] border  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] flex flex-col justify-center items-center pb-[8px] shadow-prompts text-center  cursor-pointer "
+                                            : "border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] flex flex-col justify-center items-center pb-[8px] shadow-prompts text-center  cursor-pointer"
+                                            }`}>
                                         <img
                                             className="w-[30px] h-[30px] mb-[8px]"
                                             src={human}
@@ -61,7 +81,11 @@ const PromptsPage = () => {
                                         />
                                         <p className="text-[#202027] text-sm  font-normal">Human</p>
                                     </div>
-                                    <div className=" border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center cursor-pointer">
+                                    <div onClick={handleApiActive}
+                                        className={`${apiActive
+                                            ? "border-[#1865FC] border  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer "
+                                            : "border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer"
+                                            }`}>
                                         <img
                                             className="w-[30px] h-[30px] mb-[8px]"
                                             src={api}
@@ -73,11 +97,11 @@ const PromptsPage = () => {
                             </div>
                         )}
 
-                        {active && <AiWorkingData />}
+                        {aiActive && <AiWorkingData />}
 
                     </div>
                     {/* upload buttons */}
-                    <Buttons active={active} />
+                    <Buttons active={aiActive} />
                 </div>
 
                 <div className="lg:col-span-3 col-span-12 flex justify-end me-[31px]  ">
