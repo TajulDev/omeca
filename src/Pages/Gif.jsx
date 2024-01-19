@@ -2,11 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ArrowRight from "../assets/arrow-right.png";
-import UploadImg from "../assets/upload.png";
 import UploadImg1 from "../assets/img1.png";
 import UploadImg2 from "../assets/img2.png";
 import UploadImg3 from "../assets/img3.png";
 import UploadMini from "../assets/upload-mini.png";
+import UploadImg from "../assets/upload.png";
 
 const Gif = () => {
 
@@ -19,7 +19,7 @@ const Gif = () => {
         {/* drag and drop */}
         <div className="drag_and_drop">
           <div className="grid grid-cols-12 gap-3">
-            <div className="col-span-6">
+            <div className="col-span-12 md:col-span-6">
               <div className="title mb-5">
                 <input
                   type="text"
@@ -37,7 +37,7 @@ const Gif = () => {
                   className="bg-[#EFF3F7] py-4 px-5 rounded-xl outline-none w-full"></textarea>
               </div>
             </div>
-            <div className="col-span-6">
+            <div className="col-span-12 md:col-span-6">
               <div className="drag_and_drop_wrapper">
                 <div className="drag_and_drop border-dashed border border-[#1765FC] rounded-2xl w-full h-[320px] flex flex-col items-center justify-center">
                   <div className="upload-img">
@@ -104,7 +104,7 @@ const Gif = () => {
           </div>
 
           <div className="mini_img bg-[#D7DDE2] py-2 px-3 rounded-xl">
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <div className="upload_img border-[7px] border-white rounded-[10px]">
                 <img src={UploadImg1} alt="" />
               </div>

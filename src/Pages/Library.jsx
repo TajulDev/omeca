@@ -61,8 +61,8 @@ const Library = () => {
     <section className="library px-8">
       <div className="point mb-28 bg-white">
         <div className="grid grid-cols-12 bg-white">
-          <div className="col-span-8">
-            <div className="library_section flex flex-col h-[100vh] justify-between">
+          <div className="col-span-12 md:col-span-8">
+            <div className="library_section flex flex-col md:h-[100vh] justify-between">
               <div className="pl-14">
                 <div className="section_heading mb-9 pt-20">
                   <p className="text-[34px] font-bold text-primary">Library</p>
@@ -93,7 +93,7 @@ const Library = () => {
               </div>
 
               <div className="other_lib px-5 py-4 border">
-                <div className="other_lib_heading flex items-center justify-between">
+                <div className="other_lib_heading flex items-center justify-between py-4">
                   <div className="other_lib_title">
                     <h4 className="text-2xl font-medium text-[#0D0D0E]">
                       Other library
@@ -108,7 +108,7 @@ const Library = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="other_lib_cards flex gap-4">
+                <div className="other_lib_cards flex flex-wrap gap-4">
                   {otherLibrary.map((overLibItem, index) => (
                     <>
                       <div
@@ -132,7 +132,7 @@ const Library = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-12 md:col-span-4">
             <div className="campain_section border border-[#D7DDE2]">
               <div className="title">
                 <p className="bg-[#D7DDE2] text-2xl font-medium py-5 text-center">
