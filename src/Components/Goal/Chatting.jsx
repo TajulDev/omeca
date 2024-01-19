@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import chatting from "../../assets/chatting.png";
 import send from "../../assets/send.png";
 import dropdown from "../../assets/dropdown.png";
@@ -7,7 +8,7 @@ const Chatting = () => {
   const [openIndex, setOpenIndex] = useState(null);
   return (
     <div>
-      <div className="h-[572px] flex flex-col justify-between gap-4 overflow-y-auto no_scrollbar">
+      <div className="h-[572px] flex flex-col md:justify-between gap-4 overflow-y-auto no_scrollbar">
         <div className="flex flex-col items-center justify-center">
           <img className="mb-[6px]" src={chatting} alt="" />
           <p className="text-[34px] font-bold text-primary mb-[25px]">
@@ -23,8 +24,7 @@ const Chatting = () => {
                   onClick={() =>
                     setOpenIndex(openIndex === index ? null : index)
                   }
-                  className="bg-[#EFF3F7] rounded-[10px] px-4 py-3 flex items-center justify-between gap-4"
-                >
+                  className="bg-[#EFF3F7] rounded-[10px] px-4 py-3 flex items-center justify-between gap-4">
                   <p className="text-secondary">
                     Describe what data is in your mind?
                   </p>
