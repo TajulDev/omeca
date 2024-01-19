@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import plus from "../assets/plus-btn.png";
 import undo from "../assets/undo.png";
 

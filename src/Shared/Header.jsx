@@ -46,7 +46,7 @@ const Header = () => {
       pic: prompts,
       active: promptsActive,
       title: "Prompts",
-      path: "/dashboard/prompts",
+      path: "/dashboard/goal",
     },
     {
       pic: gif,
@@ -61,7 +61,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="px-8 py-[23px] shadow-md bg-white relative z-10 ">
+    <div className="px-8 pt-[23px] pb-3 shadow-md bg-white  z-10 fixed top-0 w-full ">
       <div className="hidden md:flex flex-wrap justify-between gap-5 items-center">
         <div className="md:flex md:flex-shrink-0 items-center gap-[33px]">
           <div>

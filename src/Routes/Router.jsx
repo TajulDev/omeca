@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../Pages/Home";
 import MainLayout from "../Layout/MainLayout";
 import Domain from "../Pages/Domain";
+import Gif from "../Pages/Gif";
+import Home from "../Pages/Home";
+import Library from "../Pages/Library";
 import DashboardLayout from "../Layout/DashboardLayout";
 import Goal from "../Pages/Goal";
 import Prompts from "../Pages/Prompts";
+import DataSourch from "../Pages/DataSourch";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +22,14 @@ export const router = createBrowserRouter([
         path: "/domain",
         element: <Domain />,
       },
+      {
+        path: "/gif",
+        element: <Gif />,
+      },
+      {
+        path: "/library",
+        element: <Library />,
+      },
     ],
   },
   {
@@ -26,8 +37,12 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       {
-        path: "/dashboard",
+        path: "/dashboard/goal",
         element: <Goal />,
+      },
+      {
+        path: "/dashboard/data-source",
+        element: <DataSourch />,
       },
       {
         path: "/dashboard/prompts",

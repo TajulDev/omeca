@@ -5,6 +5,10 @@ body {
     background: #EFF3F7;
 }
 
+input:focus-visible {
+    outline: none;
+}
+
 .faq_btn {
     background-image: url('./assets/faq-bg.png');
     background-repeat: no-repeat;
@@ -47,4 +51,8 @@ body {
     background: #1765FC;
     top: 30px;
     left: 0;
+}
+
+.no_scrollbar::-webkit-scrollbar {
+    display: none;
 }

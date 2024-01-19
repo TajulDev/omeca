@@ -3,9 +3,10 @@ import data from "../assets/data.png";
 import plan from "../assets/plan.png";
 import sound from "../assets/sound.png";
 import deploy from "../assets/deploy.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
+  const location = useLocation();
   const navLinks = [
     {
       pic: goal,
@@ -15,7 +16,7 @@ const Sidebar = () => {
     {
       pic: data,
       title: "Data Sources",
-      path: "/dashboard/data",
+      path: "/dashboard/data-source",
     },
     {
       pic: plan,
@@ -34,17 +35,21 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="text-sm w-[221px] bg-white pt-[33px]">
+    <div className="flex-shrink-0 text-sm w-[221px] bg-white pt-[33px] fixed left-0  h-[100vh] px-5 ">
       <p className="p-[6px] mb-4 text-[#0D0D0E] font-bold">Home</p>
-      {navLinks.map((item, index) => (
-        <Link
-          className="flex items-center gap-[10px] p-[6px] text-secondary"
-          key={index}
-          to={item.path}
-        >
-          <img src={item.pic} alt="" /> {item.title}
-        </Link>
-      ))}
+      <div className="flex flex-col gap-[10px]">
+        {navLinks.map((item, index) => (
+          <Link
+            className={`${
+              location.pathname === item.path && "bg-[#EFF3F7]"
+            } flex items-center gap-[10px] p-[6px] text-secondary hover:bg-[#EFF3F7] rounded-[4px]`}
+            key={index}
+            to={item.path}
+          >
+            <img src={item.pic} alt="" /> {item.title}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
