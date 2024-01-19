@@ -61,7 +61,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="px-8 pt-[23px] pb-3 shadow-md bg-white  z-10 fixed top-0 w-full ">
+    <div className="px-8 pt-[23px] pb-3 shadow-prompts bg-white  z-10 fixed top-0 w-full ">
       <div className="hidden md:flex flex-wrap justify-between gap-5 items-center">
         <div className="md:flex md:flex-shrink-0 items-center gap-[33px]">
           <div>
@@ -109,7 +109,7 @@ const Header = () => {
               <img src={arrow} alt="" />
             </button>
             {open && (
-              <div className="shadow bg-white rounded-3 p-3 text-sm text-secondary text-center absolute w-full">
+              <div className="shadow-prompts bg-white rounded-3 p-3 text-sm text-secondary text-center absolute w-full">
                 <p
                   onClick={() => {
                     setLng("En");
@@ -205,7 +205,7 @@ const Header = () => {
                   <img src={arrow} alt="" />
                 </button>
                 {open && (
-                  <div className="shadow bg-white rounded-3 p-3 text-sm text-secondary text-center absolute w-full">
+                  <div className="shadow-prompts bg-white rounded-3 p-3 text-sm text-secondary text-center absolute w-full">
                     <p
                       onClick={() => {
                         setLng("En");

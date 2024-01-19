@@ -37,7 +37,7 @@ const Automationdata = () => {
       <div className="grid grid-cols-3 gap-[14px]">
         {details.map((data, index) => (
           <div
-            className="shadow-md border border-transparent hover:border-royalBlue transition-all duration-300  rounded-[10px] p-5 flex flex-col justify-center items-center w-full"
+            className="shadow-prompts border border-transparent hover:border-royalBlue transition-all duration-300  rounded-[10px] p-5 flex flex-col justify-center items-center w-full"
             key={index}
           >
             <img className="mb-2" src={data.pic} alt="" />
