@@ -16,7 +16,7 @@ const Sidebar = () => {
     {
       pic: data,
       title: "Data Sources",
-      path: "/dashboard/data",
+      path: "/dashboard/data-source",
     },
     {
       pic: plan,

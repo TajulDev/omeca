@@ -7,6 +7,7 @@ import Library from "../Pages/Library";
 import DashboardLayout from "../Layout/DashboardLayout";
 import Goal from "../Pages/Goal";
 import Prompts from "../Pages/Prompts";
+import DataSourch from "../Pages/DataSourch";
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/goal",
         element: <Goal />,
+      },
+      {
+        path: "/dashboard/data-source",
+        element: <DataSourch />,
       },
       {
         path: "/dashboard/prompts",
