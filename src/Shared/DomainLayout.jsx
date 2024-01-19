@@ -31,7 +31,7 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
                 placeholder={placeholder}
               />
             </div>
-            <div className="text-center my-[18px]">
+            <div className="my-[18px]">
               <button>
                 <img src={plus} alt="" />
               </button>
@@ -45,7 +45,7 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
         </div>
 
         <div>
-          <div className="flex justify-between gap-4 items-center mb-[26px]">
+          <div className="flex flex-wrap justify-between gap-4 items-center mb-[26px]">
             <button
               onClick={handleBack}
               className="flex items-center gap-2 text-secondary font-normal"

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import Chatting from "../Components/Goal/Chatting";
-import { Link } from "react-router-dom";
 import ChattingNext from "../Components/Goal/ChattingNext";
 
 const Goal = () => {
   const [chatting, setChatting] = useState(true);
   return (
     <div className="max-w-[703px] w-full mx-auto">
-      <div className="point pt-[56px] pb-[21px] px-[60px] mt-[80px] mb-[21px] bg-white  rounded-[10px]">
+      <div className="point pt-[56px] pb-[21px] px-[60px] mt-[130px] md:mt[80px] mb-[21px] bg-white  rounded-[10px]">
         {chatting ? <Chatting /> : <ChattingNext />}
       </div>
       <div className="pub_btn text-end">

@@ -40,8 +40,8 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-[#D7DDE2] px-8 pt-5 pb-4 flex items-center gap-4 justify-between fixed w-full bottom-0">
-      <button className="text-secondary text-sm font-normal px-5 py-[10px] border border-secondary bg-white rounded-[40px]">
+    <div className="bg-[#D7DDE2] px-8 pt-5 pb-4 flex flex-wrap items-center gap-4 justify-center md:justify-between fixed w-full bottom-0">
+      <button className="text-secondary text-sm font-normal px-5 py-[10px] border border-secondary bg-white rounded-[40px] whitespace-nowrap">
         Join our community
       </button>
       <div className="flex items-center gap-3">
@@ -51,7 +51,7 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      <button className="flex gap-[10px] items-center text-secondary text-sm font-normal px-5 py-[10px] border border-secondary bg-white rounded-[40px]">
+      <button className="flex flex-nowrap gap-[10px] items-center text-secondary text-sm font-normal px-5 py-[10px] border border-secondary bg-white rounded-[40px]">
         <img src={settings} alt="" /> Settings
       </button>
     </div>
