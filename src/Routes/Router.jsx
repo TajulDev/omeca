@@ -33,19 +33,19 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "/dashboard",
+    path: "/prompts",
     element: <DashboardLayout />,
     children: [
       {
-        path: "/dashboard/goal",
+        path: "/prompts/goal",
         element: <Goal />,
       },
       {
-        path: "/dashboard/data-source",
+        path: "/prompts/data-source",
         element: <DataSourch />,
       },
       {
-        path: "/dashboard/plan",
+        path: "/prompts/plan",
         element: <Prompts />,
       },
     ],

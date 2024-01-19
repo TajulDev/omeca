@@ -46,7 +46,7 @@ const Header = () => {
       pic: prompts,
       active: promptsActive,
       title: "Prompts",
-      path: "/dashboard/goal",
+      path: "/prompts/goal",
     },
     {
       pic: gif,
