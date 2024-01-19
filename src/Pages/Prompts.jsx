@@ -106,7 +106,7 @@ import PromptsPage from '../Components/Prompts/PromptsPage';
 
 const Prompts = () => {
     return (
-        <div className="ml-[221px]">
+        <div className="lg:ml-[221px] m-[20px]">
             <PromptsPage />
         </div>
     );

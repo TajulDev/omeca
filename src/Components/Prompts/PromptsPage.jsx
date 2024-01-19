@@ -104,7 +104,7 @@ const PromptsPage = () => {
                     <Buttons active={aiActive} />
                 </div>
 
-                <div className="lg:col-span-3 col-span-12 flex justify-end me-[31px]  ">
+                <div className="lg:col-span-3 col-span-12 flex lg:justify-end justify-center lg:me-[31px]   ">
                     <Examples />
                 </div>
             </div>

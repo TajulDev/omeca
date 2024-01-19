@@ -168,8 +168,9 @@ const Header = () => {
             <div className="mt-5">
               <div className="w-full">
                 {navlinks.map((data, index) => (
-                  <div
+                  <Link
                     key={index}
+                    to={data.path}
                     className={`${
                       location.pathname === data.path && "active"
                     }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}
@@ -182,7 +183,7 @@ const Header = () => {
                       alt=""
                     />
                     <p className=" text-xs text-medium">{data.title}</p>
-                  </div>
+                  </Link>
                 ))}
               </div>
 
