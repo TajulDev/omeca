@@ -7,7 +7,7 @@ const Home = () => {
             Lets get Started
           </p>
           <div
-            className="h-full"
+            className="h-[500px] mb-[28px]"
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 97.77%)",
