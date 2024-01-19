@@ -59,9 +59,23 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
               Next
             </button>
           </div>
-          <div className="border-b border-blue-400">
-            <div className="border-b border-royalBlue border-[3px] w-[33.33%]"></div>
-          </div>
+          {step === 1 ? (
+            <div>
+              <div className="border-b border-royalBlue border-[3px] w-[33.33%]"></div>
+              <div className="border-b border-blue-400"></div>
+            </div>
+          ) : step === 2 ? (
+            <div className="flex">
+              <div className="border-b border-royalBlue border-[3px] w-full"></div>
+              <div className="border-b border-[#EFF3F7] border-[3px] w-full"></div>
+              <div className="border-b border-blue-400 w-full"></div>
+            </div>
+          ) : (
+            <div className="flex">
+              <div className="border-b border-royalBlue border-[3px] w-[66.66%]"></div>
+              <div className="border-b border-blue-400 w-[33.33%]"></div>
+            </div>
+          )}
         </div>
       </div>
     </div>
