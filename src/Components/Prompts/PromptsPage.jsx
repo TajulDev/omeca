@@ -77,7 +77,7 @@ const PromptsPage = () => {
 
                     </div>
                     {/* upload buttons */}
-                    <Buttons />
+                    <Buttons active={active} />
                 </div>
 
                 <div className="lg:col-span-3 col-span-12 flex justify-end me-[31px]  ">
