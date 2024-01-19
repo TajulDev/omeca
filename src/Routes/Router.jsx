@@ -30,6 +30,14 @@ export const router = createBrowserRouter([
         path: "/library",
         element: <Library />,
       },
+      {
+        path: "/notification",
+        element: (
+          <div className="flex justify-center items-center mt-24">
+            Notification page
+          </div>
+        ),
+      },
     ],
   },
   {
@@ -47,6 +55,22 @@ export const router = createBrowserRouter([
       {
         path: "/prompts/plan",
         element: <Prompts />,
+      },
+      {
+        path: "/prompts/project-lead",
+        element: (
+          <div className="flex justify-center items-center mt-24">
+            Assigned project lead page
+          </div>
+        ),
+      },
+      {
+        path: "/prompts/deploy",
+        element: (
+          <div className="flex justify-center items-center mt-24 ">
+            Deploy page
+          </div>
+        ),
       },
     ],
   },

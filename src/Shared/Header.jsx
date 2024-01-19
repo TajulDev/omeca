@@ -56,6 +56,7 @@ const Header = () => {
     },
     {
       pic: notification,
+      active: notification,
       title: "Notification",
       path: "/notification",
     },
@@ -191,7 +192,7 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center gap-[18px]">
-              <button className="bg-blue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
+              <button className="bg-royalBlue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
                 Ask Questions?
               </button>
 
