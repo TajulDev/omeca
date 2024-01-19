@@ -27,7 +27,7 @@ const AiWorkingData = () => {
                     <div className='text-center'>
                         <img src={selectedAi} alt="" />
                     </div>
-                    <div className='text-center mt-[13px] text-sm font-normal text-[#202027ad] leading-[-0.42px] w-[526px] '>
+                    <div className='text-center mt-[13px] text-sm font-normal text-[#202027ad] leading-[-0.42px] max-w-[526px] w-full '>
                         <p >"At Buraqlab, we're not just a pet care agency; we're devoted designers of well-being for your furry family members. Our commitment to thoughtful, holistic design ensures that every aspect of our services is crafted to create a nurturing and joyful environment for  your pets. Choose Buraqlab for a unique blend of care and design expertise that  elevates your pets' experience to a new level of comfort and happiness."</p>
                     </div>
                 </div>
@@ -37,9 +37,9 @@ const AiWorkingData = () => {
                     <div className='text-center'>
                         <img className='mb-[24px]' src={blueBar} alt="" />
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <textarea onChange={handleOnChange}
-                            className='p-[20px] bg-[#EEE] border border-[#999EAB] w-[556px] h-[144px] rounded-[10px]' type="text" />
+                            className='p-[20px] bg-[#EEE] border border-[#999EAB] max-w-[556px] w-full h-[144px] rounded-[10px]' type="text" />
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const AiWorkingData = () => {
                                 <div className='text-center bg-[#1765FC] py-[13px] text-white rounded-[50%] flex justify-center items-center w-[42px] h-[42px] px-[15px]'>
                                     <p>{index}</p>
                                 </div>
-                                <div className='text-center mt-[13px] text-sm font-normal text-[#202027ad]  leading-[-0.42px] w-[526px] '>
+                                <div className='text-center mt-[13px] text-sm font-normal text-[#202027ad]  leading-[-0.42px] w-full max-w-[526px] '>
                                     <p>{data}</p>
                                 </div>
                             </div>
@@ -63,9 +63,9 @@ const AiWorkingData = () => {
                                     <div className='text-center'>
                                         <img className='mb-[24px]' src={blueBar} alt="" />
                                     </div>
-                                    <div>
+                                    <div className='w-full'>
                                         <textarea onChange={handleOnChange}
-                                            className='p-[20px] bg-[#EEE] border border-[#999EAB] w-[556px] h-[144px] rounded-[10px]' type="text" />
+                                            className='p-[20px] bg-[#EEE] border border-[#999EAB] max-w-[556px] w-full h-[144px] rounded-[10px]' type="text" />
                                     </div>
                                 </div>
                             </div>
