@@ -160,14 +160,24 @@ const Header = () => {
         </div>
 
         <div className={toggle ? "block" : "navbar mx-auto hidden"}>
-          <div className="bg-slate-200">
+          <div>
             <div className="mt-5">
               <div className="w-full">
                 {navlinks.map((data, index) => (
                   <Link
                     key={index}
-                    className={`${ location.pathname === data.path && "active" }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}>
-                    <img className="object-contain mb-[6px]" to={location.pathname === data.path ? data.active : data.pic} alt=""/>
+                    to={data.path}
+                    className={`${
+                      location.pathname === data.path && "active"
+                    }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}
+                  >
+                    <img
+                      className="object-contain mb-[6px]"
+                      src={
+                        location.pathname === data.path ? data.active : data.pic
+                      }
+                      alt=""
+                    />
                     <p className=" text-xs text-medium">{data.title}</p>
                   </Link>
                 ))}
