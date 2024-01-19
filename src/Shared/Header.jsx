@@ -61,7 +61,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="px-8 py-[23px] shadow-md bg-white  z-10 fixed top-0 w-full ">
+    <div className="px-8 pt-[23px] pb-3 shadow-md bg-white  z-10 fixed top-0 w-full ">
       <div className="hidden md:flex flex-wrap justify-between gap-5 items-center">
         <div className="md:flex md:flex-shrink-0 items-center gap-[33px]">
           <div>
@@ -168,7 +168,8 @@ const Header = () => {
                     key={index}
                     className={`${
                       location.pathname === data.path && "active"
-                    }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}>
+                    }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}
+                  >
                     <img
                       className="object-contain mb-[6px]"
                       src={
