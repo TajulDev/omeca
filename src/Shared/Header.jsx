@@ -46,7 +46,7 @@ const Header = () => {
       pic: prompts,
       active: promptsActive,
       title: "Prompts",
-      path: "/prompts",
+      path: "/dashboard/goal",
     },
     {
       pic: gif,
@@ -61,7 +61,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="px-8 py-[23px]">
+    <div className="px-8 py-[23px] shadow-md bg-white  z-10 fixed top-0 w-full ">
       <div className="hidden md:flex flex-wrap justify-between gap-5 items-center">
         <div className="md:flex md:flex-shrink-0 items-center gap-[33px]">
           <div>
@@ -77,7 +77,8 @@ const Header = () => {
                 key={index}
                 className={`${
                   location.pathname === data.path && "active"
-                } "  text-secondary flex-shrink-0 w-[65px] flex flex-col justify-center items-center text-center "`}>
+                } "  text-secondary flex-shrink-0 w-[65px] flex flex-col justify-center items-center text-center "`}
+              >
                 <img
                   className="object-contain mb-[6px]"
                   src={location.pathname === data.path ? data.active : data.pic}
@@ -98,7 +99,8 @@ const Header = () => {
           <div className="relative">
             <button
               onClick={() => setOpen(!open)}
-              className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal ">
+              className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal "
+            >
               <img src={globe} alt="" />
               {lng}
               <img src={arrow} alt="" />
@@ -110,14 +112,16 @@ const Header = () => {
                     setLng("En");
                     setOpen(false);
                   }}
-                  className="mb-2">
+                  className="mb-2"
+                >
                   En
                 </p>
                 <p
                   onClick={() => {
                     setLng("Ca");
                     setOpen(false);
-                  }}>
+                  }}
+                >
                   Ca
                 </p>
               </div>
@@ -190,7 +194,8 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => setOpen(!open)}
-                  className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal ">
+                  className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal "
+                >
                   <img src={globe} alt="" />
                   {lng}
                   <img src={arrow} alt="" />
@@ -202,14 +207,16 @@ const Header = () => {
                         setLng("En");
                         setOpen(false);
                       }}
-                      className="mb-2">
+                      className="mb-2"
+                    >
                       En
                     </p>
                     <p
                       onClick={() => {
                         setLng("Ca");
                         setOpen(false);
-                      }}>
+                      }}
+                    >
                       Ca
                     </p>
                   </div>
