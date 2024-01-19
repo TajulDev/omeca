@@ -1,10 +1,78 @@
-import React from 'react';
+import plus_button from '../assets/plus-btn.png';
+import ai from '../assets/ai.svg';
+import bot from '../assets/bot.png';
+import human from '../assets/user.png';
+import api from '../assets/api.png';
+import selectedAi from '../assets/selectedAi.png';
+import blueBar from '../assets/blue-bar.png';
+import { useState } from 'react';
+import WorkFlowHeader from '../Components/Prompts/WorkFlowHeader';
+import AiWorkingData from '../Components/Prompts/AiWorkingData';
+
+
+
+
 
 const Prompts = () => {
+
+    const [active, setActive] = useState(false)
+
+    const handleActive = () => {
+        setActive(!active)
+    }
     return (
-        <div>
-            Data Work Flow Map
-        </div>
+        <>
+            <div className="grid grid-cols-12 w-[100%] me-[31px]">
+                <div className=" col-span-9 ">
+                    <div className="flex flex-col m-auto mt-[115px]">
+
+                        <WorkFlowHeader />
+
+                        <div className='m-auto shadow-prompts h-[91px] bg-white rounded-[5px] p-[6px]  mb-[20px]'>
+                            <div className='flex items-center gap-[2px]'>
+
+                                <div onClick={handleActive} className={`${active ? "border-[#1865FC] border  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer " : "border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center  cursor-pointer"}`}>
+                                    <img className='w-[30px] h-[30px] mb-[8px]' src={ai} alt="ai" />
+                                    <p className='text-[#202027] text-sm  font-normal'>AI</p>
+                                </div>
+
+                                <div className=' border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center cursor-pointer'>
+                                    <img className='w-[30px] h-[30px] mb-[8px]' src={bot} alt="ai" />
+                                    <p className='text-[#202027] text-sm  font-normal'>Bot</p>
+                                </div>
+                                <div className=' border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts flex flex-col  cursor-pointer items-center'>
+                                    <img className='w-[30px] h-[30px] mb-[8px]' src={human} alt="ai" />
+                                    <p className='text-[#202027] text-sm  font-normal'>Human</p>
+                                </div>
+                                <div className=' border border-white  w-[70px] rounded-[6px]  h-[80px] pt-[16px] px-[20px] pb-[8px] shadow-prompts text-center cursor-pointer'>
+                                    <img className='w-[30px] h-[30px] mb-[8px]' src={api} alt="ai" />
+                                    <p className='text-[#202027] text-sm  font-normal'>API</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {active && <AiWorkingData />}
+
+                    </div>
+
+                </div>
+                <div className="col-span-3">
+                    <div className='bg-white rounded-[6px] mt-[70px] pt-[25px] ps-[19px] pe-[13px] h-[810px] lg:max-w-[292px] '>
+                        <h3 className='text-lg font-medium text-[#202027]  mb-[20px] ' >Examples</h3>
+                        <div className='py-[15px] px-[20px] bg-[#EFF3F7] rounded-[4px] mb-[10px]' >
+                            <p className='text-sm font-medium text-[#202027]  '>taheruiux@gmail.com</p>
+                        </div>
+                        <div className='py-[15px] px-[20px] bg-[#EFF3F7] rounded-[4px] mb-[10px]' >
+                            <p className='text-sm font-medium text-[#202027]  '>taheruiux</p>
+                        </div>
+                        <div className='py-[15px] px-[20px] bg-[#EFF3F7] rounded-[4px] mb-[10px]' >
+                            <p className='text-sm font-medium text-[#202027]  '>Physical</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 
