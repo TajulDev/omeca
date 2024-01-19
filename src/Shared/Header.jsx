@@ -164,7 +164,7 @@ const Header = () => {
         </div>
 
         <div className={toggle ? "block" : "navbar mx-auto hidden"}>
-          <div className="bg-slate-200">
+          <div>
             <div className="mt-5">
               <div className="w-full">
                 {navlinks.map((data, index) => (
