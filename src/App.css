@@ -5,6 +5,10 @@ body {
     background: #EFF3F7;
 }
 
+input:focus-visible {
+    outline: none;
+}
+
 .faq_btn {
     background-image: url('./assets/faq-bg.png');
     background-repeat: no-repeat;

@@ -2,7 +2,6 @@ import chatting from "../../assets/chatting.png";
 import send from "../../assets/send.png";
 import dropdown from "../../assets/dropdown.png";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Chatting = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -63,15 +62,6 @@ const Chatting = () => {
             </button>
           </form>
         </div>
-      </div>
-
-      <div className="pub_btn">
-        <Link
-          to={"#"}
-          className="py-4 w-[170px] inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300"
-        >
-          Publish
-        </Link>
       </div>
     </div>
   );
