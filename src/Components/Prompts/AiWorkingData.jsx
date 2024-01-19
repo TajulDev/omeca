@@ -7,6 +7,7 @@ import plus from '../../assets/plus-btn.png';
 import { useState } from 'react';
 
 const AiWorkingData = () => {
+
     const [textValue, setTextValue] = useState("")
     const handleOnChange = (e) => {
         console.log(e.target.value)
@@ -84,13 +85,17 @@ const AiWorkingData = () => {
             </div>
 
             {/* last */}
+            {/* <Buttons /> */}
+
             <div className='mb-[24px]'>
                 <div className=' flex justify-center flex-col items-center m-auto'>
                     <div className='text-center'>
                         <img className='mb-[24px]' src={plus} alt="" />
                     </div>
+                    {/* <Buttons /> */}
                 </div>
             </div>
+
         </>
     );
 };

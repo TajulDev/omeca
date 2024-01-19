@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import plus_button from '../../assets/plus-btn.png';
 
 const WorkFlowHeader = ({ handleWorkFlow }) => {
