@@ -1,13 +1,11 @@
 /* eslint-disable react/prop-types */
-import goal from "../assets/goal.png";
+import { IoMdClose } from "react-icons/io";
+import { Link, useLocation } from "react-router-dom";
 import data from "../assets/data.png";
+import deploy from "../assets/deploy.png";
+import goal from "../assets/goal.png";
 import plan from "../assets/plan.png";
 import sound from "../assets/sound.png";
-import deploy from "../assets/deploy.png";
-import { Link, useLocation } from "react-router-dom";
-import { IoMdClose } from "react-icons/io";
-import { IoReorderThreeOutline } from "react-icons/io5";
-
 
 const Sidebar = ({ handleSidebar, sidebar }) => {
   const location = useLocation();
@@ -40,8 +38,6 @@ const Sidebar = ({ handleSidebar, sidebar }) => {
   ];
   return (
     <>
-     
-
       <div
         className={`flex-shrink-0 text-sm w-[221px] bg-white pt-[33px] fixed left-0 h-[100vh] px-5 ${
           sidebar ? "block" : "hidden"

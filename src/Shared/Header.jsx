@@ -81,8 +81,7 @@ const Header = () => {
                   data.path.includes("/prompts")
                     ? "active"
                     : location.pathname === data.path && "active"
-                }  text-secondary flex-shrink-0 w-[65px] flex flex-col justify-center items-center text-center `}
-              >
+                }  text-secondary flex-shrink-0 w-[65px] flex flex-col justify-center items-center text-center `}>
                 <img
                   className="object-contain mb-[6px]"
                   src={location.pathname === data.path ? data.active : data.pic}
@@ -103,8 +102,7 @@ const Header = () => {
           <div className="relative">
             <button
               onClick={() => setOpen(!open)}
-              className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal "
-            >
+              className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal ">
               <img src={globe} alt="" />
               {lng}
               <img src={arrow} alt="" />
@@ -116,16 +114,14 @@ const Header = () => {
                     setLng("En");
                     setOpen(false);
                   }}
-                  className="mb-2"
-                >
+                  className="mb-2">
                   En
                 </p>
                 <p
                   onClick={() => {
                     setLng("Ca");
                     setOpen(false);
-                  }}
-                >
+                  }}>
                   Ca
                 </p>
               </div>
@@ -168,21 +164,12 @@ const Header = () => {
             <div className="mt-5">
               <div className="w-full">
                 {navlinks.map((data, index) => (
-                  <div
+                  <Link
                     key={index}
-                    className={`${
-                      location.pathname === data.path && "active"
-                    }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}
-                  >
-                    <img
-                      className="object-contain mb-[6px]"
-                      src={
-                        location.pathname === data.path ? data.active : data.pic
-                      }
-                      alt=""
-                    />
+                    className={`${ location.pathname === data.path && "active" }" text-secondary flex-shrink-0 w-full flex gap-2 py-2 justify-center items-center text-center"`}>
+                    <img className="object-contain mb-[6px]" to={location.pathname === data.path ? data.active : data.pic} alt=""/>
                     <p className=" text-xs text-medium">{data.title}</p>
-                  </div>
+                  </Link>
                 ))}
               </div>
 
@@ -199,8 +186,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => setOpen(!open)}
-                  className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal "
-                >
+                  className="border border-[#EFF3F7] rounded-[50px] px-[9px] py-[10px] flex items-center gap-2 text-secondary text-sm font-normal ">
                   <img src={globe} alt="" />
                   {lng}
                   <img src={arrow} alt="" />
@@ -212,16 +198,14 @@ const Header = () => {
                         setLng("En");
                         setOpen(false);
                       }}
-                      className="mb-2"
-                    >
+                      className="mb-2">
                       En
                     </p>
                     <p
                       onClick={() => {
                         setLng("Ca");
                         setOpen(false);
-                      }}
-                    >
+                      }}>
                       Ca
                     </p>
                   </div>
