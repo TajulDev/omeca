@@ -45,7 +45,7 @@ export const router = createBrowserRouter([
         element: <DataSourch />,
       },
       {
-        path: "/dashboard/prompts",
+        path: "/dashboard/plan",
         element: <Prompts />,
       },
     ],

@@ -37,15 +37,25 @@ const Automationdata = () => {
       <div className="grid grid-cols-3 gap-[14px]">
         {details.map((data, index) => (
           <div
-            className="shadow-md rounded-[10px] p-5 flex flex-col justify-center items-center w-full"
+            className="shadow-md border border-transparent hover:border-royalBlue transition-all duration-300  rounded-[10px] p-5 flex flex-col justify-center items-center w-full"
             key={index}
           >
-            <img src={data.pic} alt="" />
-            <p>
-              <span className="text-royalBlue">{data.amount}</span> {data.title}{" "}
+            <img className="mb-2" src={data.pic} alt="" />
+            <p className="text-[18px] font-normal">
+              <span className="text-royalBlue  font-bold">{data.amount}</span>{" "}
+              {data.title}{" "}
             </p>
           </div>
         ))}
+      </div>
+
+      <div className="pub_btn text-end">
+        <button
+          className="py-4 w-[170px] inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC]
+         transition-all duration-300"
+        >
+          Continue
+        </button>
       </div>
     </div>
   );
