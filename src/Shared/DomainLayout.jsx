@@ -69,7 +69,7 @@ const DomainLayout = ({
             ))}
             <div className="my-[18px]">
               <button
-                className="hover:rotate-90 transition-all duration-300"
+                className="hover:rotate-180 transition-all duration-300"
                 onClick={handlePlusClick}
               >
                 <img src={plus} alt="" />
