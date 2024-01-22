@@ -3,7 +3,16 @@ import { useState } from "react";
 import plus from "../assets/plus-btn.png";
 import undo from "../assets/undo.png";
 
-const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
+const DomainLayout = ({
+  title,
+  domain = null,
+  setDomain,
+  label,
+  placeholder,
+  step,
+  setStep,
+  type,
+}) => {
   const [inputCount, setInputCount] = useState(1);
   const [inputs, setInputs] = useState([{ id: 1, value: "" }]);
 
@@ -38,6 +47,9 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
             {title}
           </p>
           <div className="max-w-[441px] w-full">
+            {domain && (
+              <p className="text-secondary mb-4">Domain name: {domain}</p>
+            )}
             {inputs.map((input) => (
               <div key={input.id}>
                 <label className="text-[18px] font-medium mb-[15px] block">
@@ -48,7 +60,10 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
                   type={type}
                   placeholder={placeholder}
                   value={input.value}
-                  onChange={(e) => handleInputChange(input.id, e.target.value)}
+                  onChange={(e) => {
+                    setDomain(e.target.value);
+                    handleInputChange(input.id, e.target.value);
+                  }}
                 />
               </div>
             ))}

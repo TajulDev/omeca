@@ -57,6 +57,8 @@ const Library = () => {
     },
   ];
 
+
+
   return (
     <section className="library px-8">
       <div className="point mb-28 bg-white">
@@ -70,22 +72,22 @@ const Library = () => {
 
                 <div className="mini_img py-2 px-3 rounded-xl">
                   <div className="flex flex-wrap gap-3">
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300 cursor-pointer">
                       <img src={UploadImg1} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300 cursor-pointer">
                       <img src={UploadImg2} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300 cursor-pointer">
                       <img src={UploadImg3} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300 cursor-pointer">
                       <img src={UploadImg3} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300 cursor-pointer">
                       <img src={UploadImg3} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300 cursor-pointer">
                       <img src={UploadImg3} alt="" />
                     </div>
                   </div>
