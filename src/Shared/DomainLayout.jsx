@@ -37,7 +37,7 @@ const DomainLayout = ({ title, label, placeholder, step, setStep, type }) => {
               </button>
             </div>
             {step === 1 && (
-              <button className="text-royalBlue font-medium border border-royalBlue rounded-[40px] shadow-prompts p-[17px] w-[206px]">
+              <button className="text-royalBlue font-medium border hover:bg-royalBlue hover:text-white transition-all duration-300 border-royalBlue rounded-[40px] shadow-prompts p-[17px] w-[206px]">
                 Upload CSV
               </button>
             )}

@@ -46,7 +46,11 @@ const Footer = () => {
       </button>
       <div className="flex items-center gap-3">
         {socialMedia.map((data, index) => (
-          <Link key={index} to={data.path}>
+          <Link
+            className="hover:scale-110 transition-all duration-300"
+            key={index}
+            to={data.path}
+          >
             <img src={data.icon} alt="" />
           </Link>
         ))}
