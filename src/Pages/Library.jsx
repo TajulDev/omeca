@@ -70,22 +70,22 @@ const Library = () => {
 
                 <div className="mini_img py-2 px-3 rounded-xl">
                   <div className="flex flex-wrap gap-3">
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px]">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
                       <img src={UploadImg1} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px]">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
                       <img src={UploadImg2} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px]">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
                       <img src={UploadImg3} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px]">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
                       <img src={UploadImg3} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px]">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
                       <img src={UploadImg3} alt="" />
                     </div>
-                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px]">
+                    <div className="upload_img border-[7px] border-[#D7DDE2] rounded-[10px] hover:scale-95 hover:shadow transition-all duration-300">
                       <img src={UploadImg3} alt="" />
                     </div>
                   </div>
@@ -103,7 +103,8 @@ const Library = () => {
                   <div className="save_btn">
                     <Link
                       to={"#"}
-                      className="py-4 capitalize w-[184px] inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300">
+                      className="py-4 capitalize w-[184px] inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300"
+                    >
                       save
                     </Link>
                   </div>
@@ -112,8 +113,9 @@ const Library = () => {
                   {otherLibrary.map((overLibItem, index) => (
                     <>
                       <div
-                        className="other_lib_card py-5 px-12 border border-[#DFDFDF] rounded-lg flex flex-col items-center text-center"
-                        key={index}>
+                        className="hover:scale-95 hover:shadow transition-all duration-300 other_lib_card py-5 px-12 border border-[#DFDFDF] rounded-lg flex flex-col items-center text-center"
+                        key={index}
+                      >
                         <div className="card_img">
                           <img src={overLibItem.videoImg} alt="" />
                         </div>
@@ -149,8 +151,9 @@ const Library = () => {
                 {newVideo.map((newVideoItem, index) => (
                   <>
                     <div
-                      className="new_video_card flex flex-col items-center text-center py-3 px-4 bg-white rounded-[6px] shadow-prompts relative mb-5"
-                      key={index}>
+                      className="hover:scale-95 hover:shadow transition-all duration-300 new_video_card flex flex-col items-center text-center py-3 px-4 bg-white rounded-[6px] shadow-prompts relative mb-5"
+                      key={index}
+                    >
                       <div className="new_video_img">
                         <img src={newVideoItem.videoImg} alt="" />
                       </div>
@@ -173,7 +176,8 @@ const Library = () => {
                 <div className="save_btn py-[42px]">
                   <Link
                     to={"#"}
-                    className="py-4 capitalize w-full inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300">
+                    className="py-4 capitalize w-full inline-block bg-[#1765FC] rounded-[60px] text-center text-base font-medium text-white border hover:bg-white hover:border-[#1765FC] hover:text-[#1765FC] transition-all duration-300"
+                  >
                     save
                   </Link>
                 </div>

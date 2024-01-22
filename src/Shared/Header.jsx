@@ -97,7 +97,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-[18px]">
-          <button className="bg-royalBlue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
+          <button className="bg-royalBlue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium hover:bg-transparent hover:text-royalBlue border border-transparent hover:border-royalBlue transition-all duration-300">
             Ask Questions?
           </button>
           <div className="relative">
@@ -193,7 +193,7 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center gap-[18px]">
-              <button className="bg-royalBlue rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
+              <button className="bg-royalBlue hover:bg-transparent hover:text-royalBlue border border-transparent hover:border-royalBlue transition-all duration-300 rounded-[50px] py-[13px] px-[26px] text-white text-sm font-medium">
                 Ask Questions?
               </button>
 
